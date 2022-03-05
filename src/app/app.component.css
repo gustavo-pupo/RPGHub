@@ -1,0 +1,10 @@
+header, footer{
+    width: 100%;
+    text-align: center;
+    padding: 2% 0 2% 0;
+    background-color: rebeccapurple;
+}
+h1, p{
+    text-shadow: 0 0 1rem white, 0 0 1rem white;
+    cursor: pointer;
+}

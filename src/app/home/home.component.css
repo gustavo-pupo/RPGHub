@@ -1,0 +1,48 @@
+/* tags */
+    h2{
+        margin: 5% 0 0 0;
+        background-color: hotpink;
+    }
+/* classes */
+
+/* ids */
+div#geral{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1% 0 1% 5%;
+    border: 1px solid black;
+}
+div#usm, div#did, div#hopeless,div#kynoka{
+    width: 20%;
+    height: 50vh;
+    margin: 2% 1% 2% 1%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0.5rem;
+}
+
+div#usm:hover, 
+div#did:hover, 
+div#hopeless:hover,
+div#kynoka:hover{
+    width: 25%;
+    height: 60vh;
+}
+div#usm{
+    border: 1px solid red;
+    margin: 2% 1% 0 6.5%;
+}
+
+div#did{
+    border: 1px solid teal;
+}
+
+div#hopeless{
+    border: 1px solid darkslategray;
+}
+
+div#kynoka{
+    border: 1px solid goldenrod;
+}

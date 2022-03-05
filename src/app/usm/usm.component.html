@@ -1,0 +1,92 @@
+<div id="geral">
+    <div id="infos">
+        <div id="status">
+            <div id="nomeDiv">
+            <label for="nome">Nome:</label>
+                <input type="text" placeholder="Ex: Joãozinho#069420" name="nome" id="nome">
+            </div>
+                <div id="vida">
+                    <label for="vida">Vida:</label>
+                        <div class="ladinho">
+                        <input type="number" name="qtdVida" id="qtdVida">
+                        <p id="vidaMax"></p>
+                        </div>
+                </div>
+                <div id="mana">
+                    <label for="mana">Mana:</label>
+                        <div class="ladinho">
+                        <input type="number" min="0" name="qtdMana" id="qtdMana">
+                        <p id="manaMax"></p>
+                        </div>
+                </div>
+        </div>
+        <div id="atributos">
+            <div id="left">
+            <label for="Força">Força:</label>
+                <input name="Força" type="number" id="for" type="text">
+
+            <label for="Constituição">Constituição:</label>
+                <input name="Constituição" type="number" id="con" type="text">
+
+            <label for="Destreza">Destreza:</label>
+                <input name="Destreza" type="number" id="dex" type="text">
+
+            <label for="Atirar">Atirar:</label>
+                <input name="Atirar" type="number" id="atirar" type="text">
+                
+            <label for="Percepção">Percepção:</label>
+                <input name="Percepção" type="number" id="sentir" type="text">
+            </div>
+            <div id="right">
+            <label for="Primeiros-Socorros">Primeiros-Socorros:</label>
+                <input name="Primeiros-Socorros" type="number" id="cura" type="text">
+
+            <label for="Arremessar">Arremessar:</label>
+                <input name="Arremessar" type="number" id="tacar" type="text">
+
+            <label for="Inteligência">Inteligência:</label>
+                <input name="Inteligência" type="number" id="int" type="text">
+
+            <label for="Lábia">Lábia:</label>
+                <input name="Lábia" type="number" id="labia" type="text">
+
+            <label for="Ferramentas">Ferramentas:</label>
+                <input name="Ferramentas" type="number" id="tools" type="text">
+            </div>
+        </div>
+        <button onclick="salvarInfos()" id="salvaAtributos">Salvar</button>
+    </div>
+
+    <div id="roladas">
+        <div id="testes">
+
+        <div id="cima">
+            <button onclick="testeForca()" class="botao">Força</button>
+
+            <button onclick="testeCon()" class="botao">Constituição</button>
+
+            <button onclick="testeDex()" class="botao">Destreza</button>
+
+            <button onclick="testeAtirar()" class="botao">Atirar</button>
+
+            <button onclick="testePercep()" class="botao">Percepção</button>
+        </div>
+        <div id="baixo">
+            <button onclick="testeCura()" class="botao">Primeiros-Socorros</button>
+
+            <button onclick="testeTacar()" class="botao">Arremessar</button>
+
+            <button onclick="testeIntel()" class="botao">Inteligência</button>
+
+            <button onclick="testeLabia()" class="botao">Lábia</button>
+
+            <button onclick="testeTools()" class="botao">Ferramentas</button>
+        </div>
+        </div>
+        <div id="resultado">
+            <p id="numero"></p>
+            <p id="sucesso"></p>
+            <span id="teste"></span>
+        </div>
+    </div>
+</div>
