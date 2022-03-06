@@ -33,6 +33,10 @@ div#kynoka:hover{
 div#usm{
     border: 1px solid red;
     margin: 2% 1% 0 6.5%;
+    background-image: url(../../assets/img/USM.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 280%;
 }
 
 div#did{
