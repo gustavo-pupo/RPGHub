@@ -14,9 +14,9 @@ div#geral{
     border: 1px solid black;
 }
 div#usm, div#did, div#hopeless,div#kynoka{
-    width: 20%;
+    width: 50%;
     height: 50vh;
-    margin: 2% 1% 2% 1%;
+    margin: 2% 1%;
     text-align: center;
     cursor: pointer;
     transition: 0.4s;
@@ -27,16 +27,16 @@ div#usm:hover,
 div#did:hover, 
 div#hopeless:hover,
 div#kynoka:hover{
-    width: 25%;
+    width: 50%;
     height: 60vh;
 }
 div#usm{
     border: 1px solid red;
-    margin: 2% 1% 0 6.5%;
+    margin: 2% 1%;
     background-image: url(../../assets/img/USM.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 280%;
+    background-size: cover;
 }
 
 div#did{
@@ -49,4 +49,9 @@ div#hopeless{
 
 div#kynoka{
     border: 1px solid goldenrod;
+    margin: 2% 1%;
+    background-image: url(../../assets/img/ALR.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
