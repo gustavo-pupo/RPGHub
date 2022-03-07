@@ -1,0 +1,30 @@
+/* tags */
+/* classes */
+.pericias{
+    display: flex;
+    flex-direction: column;
+}
+/* ids */
+div#status{
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+div#infos{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+}
+div#atributos{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin: auto;
+}
+div#meio{
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
