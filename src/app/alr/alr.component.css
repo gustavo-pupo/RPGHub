@@ -18,7 +18,7 @@ th{
 td{
     padding: 2%;
 }
-label, h2{
+label, h2, h1, h3{
     color: #D2F8E7;
     text-shadow: 0 0 1rem #88BFBF, 0 0 1rem #88BFBF;
 }
@@ -56,6 +56,11 @@ input{
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
+}
+.salvar{
+    width: 20%;
+    margin: auto;
+    height: 4rem;
 }
 /* ids */
 div#status{
@@ -112,4 +117,12 @@ div#nomeDiv{
 div#nomeDiv input{
     font-size: 1.5rem;
     width: 75%;
+}
+div#dado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0 0 0 15%;
 }

@@ -19,19 +19,20 @@
                     <label for="sanidade">Sanidade:</label>
                     <input type="number" name="sanidade" id="inputSanidade">
                 </div>
+                <button (click)="salvar()" class="botao salvar">Salvar</button>
             </div>
         </div>
         <div id="atributos">
             <div id="esquerda">
                 <div id="FOR">
-                    <table class="">
+                    <table>
                         <tr>
                             <th><h2>Força:</h2></th>
                             <th><input type="number" class="input" name="força" id="inputFor"></th>
                         </tr>
                             <tr>
-                                <td><button class="botao">Lutar</button></td>
-                                <td><input type="number" class="input" name="lutar"></td>
+                                <td><button (click)="testeLutar()" class="botao">Lutar</button></td>
+                                <td><input type="number" [(ngModel)]="lutarALR" class="input" name="lutar"></td>
                             </tr>
                             <tr>
                                 <td><button class="botao">Armas Pesadas</button></td>
@@ -128,10 +129,10 @@
                         </tr>
                         </table>
                     </div>
-                    <!-- <div id="dado">
-                        <h1></h1>
-                        <h3></h3>
-                    </div> -->
+                    <div id="dado">
+                        <h1>{{dado}}</h1>
+                        <h3>{{tierSucesso}}</h3>
+                    </div>
                 </div>
                 <div id="right">
                     <div id="MED">
