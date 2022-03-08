@@ -2,6 +2,7 @@ body, *{
     margin: 0;
     padding: 0;
     background-color: #2A232A;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* tags */
@@ -13,24 +14,28 @@ label{
 input{
     /* width: 50%; */
     font-size: 1.5rem;
-    padding: 0 0 0 1%;
+    padding: 1%;
     text-align: center;
-    background-color: #e9e9e9;
+    background-color: #4f4f4f;
+    color: #fcd980;
     border-radius: 0.3rem;
 }
 
-label, p, button{
-    color: white;
-    text-shadow: black 0 0 0.4rem;
+label, p{
+    color: #D2F8E7;
+    text-shadow: 0 0 1rem #88BFBF, 0 0 1rem #88BFBF;
 }
 
 
 /* classes */
 .botao{
     width: 50%;
-    height: 40px;
+    height: 4rem;
     margin: 1%;
-    background-color: #3d0e61;
+    background-color: #80bcfc;
+    color: #161444;
+    font-size: 1rem
+
 }
 
 div.ladinho{
@@ -63,7 +68,8 @@ div#infos button{
     height: 60px;
     margin: 2% 0 2% 10%;
     font-size: 1.5rem;
-    background-color: #c8c8c8;
+    background-color: #80bcfc;
+    color: #161444;
 }
 
 div#status{
@@ -160,7 +166,6 @@ span#teste{
 #copy{
     text-align: center;
 }
-
 @media (max-width: 600px){
 /* ids */
     div#geral{

@@ -3,6 +3,18 @@
         margin: 5% 0 0 0;
         background-color: hotpink;
     }
+    button{
+    padding: 1.5%;
+    background-color: #80bcfc;
+    transition: 0.5s;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #161444;
+    border-radius: 0.2rem;
+    }
+    button:hover{
+        background-color: aquamarine;
+    }
 /* classes */
 
 /* ids */
@@ -27,8 +39,7 @@ div#usm:hover,
 div#did:hover, 
 div#hopeless:hover,
 div#kynoka:hover{
-    width: 50%;
-    height: 60vh;
+    box-shadow: 0 0 1rem #80bcfc, 0 0 1rem #80bcfc;
 }
 div#usm{
     /* border: 1px solid red; */
@@ -54,4 +65,8 @@ div#kynoka{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+div#botao{
+    width: 100%;
+    text-align: center;
 }

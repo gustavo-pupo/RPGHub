@@ -140,18 +140,155 @@ export class ALRComponent implements OnInit {
     this.dado = dado;
   }
 
+  testeResFisica(){
+    this.calcularSucesso(this.resFisicaALR);
+  }
+  testeResEspiritual(){
+    this.calcularSucesso(this.resEspiritualALR);
+  }
+  testeSanidade(){
+    this.calcularSucesso(this.sanidadeALR);
+  }
   testeLutar(){
     this.calcularSucesso(this.lutarALR);
   }
   testeArmasPesadas(){
     this.calcularSucesso(this.armasPesadasALR);
   }
+  testeForBru(){
+    this.calcularSucesso(this.forBruALR);
+  }
+  testeEsquiva(){
+    this.calcularSucesso(this.esquivaALR);
+  }
+  testeBloqueio(){
+    this.calcularSucesso(this.bloqueioALR);
+  }
+  testeCounter(){
+    this.calcularSucesso(this.counterALR);
+  }
+  testeArmasLeves(){
+    this.calcularSucesso(this.armasLevesALR);
+  }
+  testeArmasDeFogo(){
+    this.calcularSucesso(this.armasDeFogoALR);
+  }
+  testePrecisao(){
+    this.calcularSucesso(this.precisaoALR);
+  }
+  testeFind(){
+    this.calcularSucesso(this.findALR);
+  }
+  testeEscutar(){
+    this.calcularSucesso(this.intuitionALR);
+  }
+  testeIntuition(){
+    this.calcularSucesso(this.intuitionALR);
+  }
+  testefirstAid(){
+    this.calcularSucesso(this.firstAidALR);
+  }
+  testeMedForense(){
+    this.calcularSucesso(this.medForenseALR);
+  }
+  testeMedicina(){
+    this.calcularSucesso(this.medicinaALR);
+  }
+  testeVelocidade(){
+    this.calcularSucesso(this.velocidadeALR);
+  }
+  testeEscalada(){
+    this.calcularSucesso(this.escaladaALR);
+  }
+  testeAcrobacia(){
+    this.calcularSucesso(this.acrobaciaALR);
+  }
+  testeMagia(){
+    this.calcularSucesso(this.magiaALR);
+  }
+  testeIntelecto(){
+    this.calcularSucesso(this.intelectoALR);
+  }
+  testeConhecimento(){
+    this.calcularSucesso(this.conhecimentoALR);
+  }
+  testePersuasao(){
+    this.calcularSucesso(this.persuasaoALR);
+  }
+  testeDiplomacia(){
+    this.calcularSucesso(this.diplomaciaALR);
+  }
+  testeIntimidacao(){
+    this.calcularSucesso(this.intimidacaoALR);
+  }
 
   constructor() { }
 
   ngOnInit(): void {
     if(localStorage.length > 0){
-      
-  }
+      this.nomeALR = localStorage.getItem("nomeALR")
+      this.vidaALR = parseInt(localStorage.getItem("vidaALR"));
+      this.manaALR = parseInt(localStorage.getItem("manaALR"));
+      this.sanidadeALR = parseInt(localStorage.getItem("sanidadeALR"));
+      this.lutarALR = parseInt(localStorage.getItem("lutarALR"));
+      this.armasPesadasALR = parseInt(localStorage.getItem("armasPesadasALR"));
+      this.forBruALR = parseInt(localStorage.getItem("forBruALR"));
+      this.esquivaALR = parseInt(localStorage.getItem("esquivaALR"));
+      this.bloqueioALR = parseInt(localStorage.getItem("bloqueioALR"));
+      this.counterALR = parseInt(localStorage.getItem("counterALR"));
+      this.armasLevesALR = parseInt(localStorage.getItem("armasLevesALR"));
+      this.armasDeFogoALR = parseInt(localStorage.getItem("armasDeFogo"));
+      this.precisaoALR = parseInt(localStorage.getItem("precisaoALR"));
+      this.findALR = parseInt(localStorage.getItem("findALR"));
+      this.escutarALR = parseInt(localStorage.getItem("escutarALR"));
+      this.intuitionALR = parseInt(localStorage.getItem("intuitionALR"));
+      this.resFisicaALR = parseInt(localStorage.getItem("resFisicaALR"));
+      this.resMentalALR = parseInt(localStorage.getItem("resMentalALR"));
+      this.resEspiritualALR = parseInt(localStorage.getItem("resEspiritualALR"));
+      this.firstAidALR = parseInt(localStorage.getItem("firstAidALR"));
+      this.medForenseALR = parseInt(localStorage.getItem("medForenseALR"));
+      this.medicinaALR = parseInt(localStorage.getItem("medicinaALR"));
+      this.velocidadeALR = parseInt(localStorage.getItem("velocidadeALR"));
+      this.escaladaALR = parseInt(localStorage.getItem("escaladaALR"));
+      this.acrobaciaALR = parseInt(localStorage.getItem("acrobaciaALR"));
+      this.magiaALR = parseInt(localStorage.getItem("magiaALR"));
+      this.intelectoALR = parseInt(localStorage.getItem("intelectoALR"));
+      this.conhecimentoALR = parseInt(localStorage.getItem("conhecimentoALR"));
+      this.persuasaoALR = parseInt(localStorage.getItem("persuasaoALR"));
+      this.diplomaciaALR = parseInt(localStorage.getItem("diplomaciaALR"));
+      this.intimidacaoALR = parseInt(localStorage.getItem("intimidacaoALR"));
+    }else{
+      this.nomeALR = "";
+      this.vidaALR = 0;
+      this.manaALR = 0;
+      this.sanidadeALR = 0;
+      this.lutarALR = 0;
+      this.armasPesadasALR = 0;
+      this.forBruALR = 0;
+      this.esquivaALR = 0;
+      this.bloqueioALR = 0;
+      this.counterALR = 0;
+      this.armasLevesALR = 0;
+      this.armasDeFogoALR = 0;
+      this.precisaoALR = 0;
+      this.findALR = 0;
+      this.escutarALR = 0;
+      this.intuitionALR = 0;
+      this.resFisicaALR = 0;
+      this.resMentalALR = 0;
+      this.resEspiritualALR = 0;
+      this.firstAidALR = 0;
+      this.medForenseALR = 0;
+      this.medicinaALR = 0;
+      this.velocidadeALR = 0;
+      this.escaladaALR = 0;
+      this.acrobaciaALR = 0;
+      this.magiaALR = 0;
+      this.intelectoALR = 0;
+      this.conhecimentoALR = 0;
+      this.persuasaoALR = 0;
+      this.diplomaciaALR = 0;
+      this.intimidacaoALR = 0;
+    }
   }
 }

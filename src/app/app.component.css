@@ -11,7 +11,9 @@ header{
 footer{
     margin: 2% 0 0 0;
 }
-h1, p{
-    text-shadow: 0 0 1rem white, 0 0 1rem white;
+h1, p, a{
+    color: #9de1e1;
+    text-shadow: 0 0 1rem #9fd2ff, 0 0 1rem #9fd2ff;
     cursor: pointer;
+    text-decoration: none;
 }

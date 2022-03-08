@@ -4,24 +4,27 @@
         <div id="infos">
             <div id="nomeDiv">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="inputNome">
+                <input type="text" [(ngModel)]="nomeALR" name="nome" id="inputNome">
             </div>
             <div id="vidaManaSan">
                 <div id="vida">
                     <label for="vida">Vida:</label>
-                    <input type="number" name="vida" id="inputVida">
+                    <input type="number" [(ngModel)]="vidaALR" name="vida" id="inputVida">
+                    <h2>/{{resFisicaALR*2}}</h2>
                 </div>
                 <div id="mana">
                     <label for="mana">Mana:</label>
-                    <input type="number" name="mana" id="inputMana">
+                    <input type="number" [(ngModel)]="manaALR" name="mana" id="inputMana">
+                    <h2>/{{resEspiritualALR*3}}</h2>
                 </div>
                 <div id="sanidade">
                     <label for="sanidade">Sanidade:</label>
-                    <input type="number" name="sanidade" id="inputSanidade">
+                    <input type="number" [(ngModel)]="sanidadeALR" name="sanidade" id="inputSanidade">
+                    <h2>/{{resMentalALR}}</h2>
                 </div>
                 <button (click)="salvar()" class="botao salvar">Salvar</button>
             </div>
-        </div>
+        -</div>
         <div id="atributos">
             <div id="esquerda">
                 <div id="FOR">
@@ -35,12 +38,12 @@
                                 <td><input type="number" [(ngModel)]="lutarALR" class="input" name="lutar"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Armas Pesadas</button></td>
-                                <td><input type="number" class="input" name="armasPesadas"></td>
+                                <td><button (click)="testeArmasPesadas()" class="botao">Armas Pesadas</button></td>
+                                <td><input type="number" [(ngModel)]="armasPesadasALR" class="input" name="armasPesadas"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Força Bruta</button></td>
-                                <td><input type="number" class="input" name="forcaBruta"></td>
+                                <td><button (click)="testeForBru()" class="botao">Força Bruta</button></td>
+                                <td><input type="number" [(ngModel)]="forBruALR" class="input" name="forcaBruta"></td>
                             </tr>
                     </table>
                 </div>
@@ -51,16 +54,16 @@
                             <th><input class="input" type="number" name="defesa" id="inputDefesa"></th>
                         </tr>
                         <tr>
-                            <td><button class="botao">Esquiva</button></td>
-                            <td><input type="number" class="input" name="esquiva"></td>
+                            <td><button (click)="testeEsquiva()" class="botao">Esquiva</button></td>
+                            <td><input type="number" [(ngModel)]="esquivaALR" class="input" name="esquiva"></td>
                         </tr>
                         <tr>
-                            <td><button class="botao">Bloqueio</button></td>
-                            <td><input type="number" class="input" name="bloqueio"></td>
+                            <td><button (click)="testeBloqueio()" class="botao">Bloqueio</button></td>
+                            <td><input type="number" [(ngModel)]="bloqueioALR" class="input" name="bloqueio"></td>
                         </tr>
                         <tr>
-                            <td><button class="botao">Contra-ataque</button></td>
-                            <td><input type="number" class="input" name="contraAtaque"></td>
+                            <td><button (click)="testeCounter()" class="botao">Contra-ataque</button></td>
+                            <td><input type="number" [(ngModel)]="counterALR" class="input" name="contraAtaque"></td>
                         </tr>
                     </table>
                 </div>
@@ -74,16 +77,16 @@
                                 <th><input class="input" type="number" name="destreza" id="inputDestreza"></th>
                             </tr>
                             <tr>
-                                <td><button class="botao">Armas leves</button></td>
-                                <td><input type="number" class="input" name="armasLeves"></td>
+                                <td><button (click)="testeArmasLeves()" class="botao">Armas leves</button></td>
+                                <td><input type="number" [(ngModel)]="armasLevesALR" class="input" name="armasLeves"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Armas de fogo</button></td>
-                                <td><input type="number" class="input" name="armasDeFogo"></td>
+                                <td><button (click)="testeArmasDeFogo()" class="botao">Armas de fogo</button></td>
+                                <td><input type="number" [(ngModel)]="armasDeFogoALR" class="input" name="armasDeFogo"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Precisão</button></td>
-                                <td><input type="number" class="input" name="precisao"></td>
+                                <td><button (click)="testePrecisao()" class="botao">Precisão</button></td>
+                                <td><input type="number" [(ngModel)]="precisaoALR" class="input" name="precisao"></td>
                             </tr>
                         </table>
                     </div>
@@ -91,19 +94,19 @@
                     <table>
                         <tr>
                             <th><h2>Percepção:</h2></th>
-                            <th><input type="number" class="input" name="perception" id="inputPerception"></th>
+                            <th><input  type="number" class="input" name="perception" id="inputPerception"></th>
                         </tr>
                         <tr>
-                            <td><button class="botao">Encontrar</button></td>
-                            <td><input type="number" name="encontrar" class="input"></td>
+                            <td><button (click)="testeFind()" class="botao">Encontrar</button></td>
+                            <td><input type="number" [(ngModel)]="findALR" name="encontrar" class="input"></td>
                         </tr>
                         <tr>
-                            <td><button class="botao">Escutar</button></td>
-                            <td><input type="number" name="escutar" class="input"></td>
+                            <td><button (click)="testeEscutar()" class="botao">Escutar</button></td>
+                            <td><input type="number" [(ngModel)]="escutarALR" name="escutar" class="input"></td>
                         </tr>
                         <tr>
-                            <td><button class="botao">Intuição</button></td>
-                            <td><input type="number" name="intuicao" class="input"></td>
+                            <td><button (click)="testeIntuition()" class="botao">Intuição</button></td>
+                            <td><input type="number" [(ngModel)]="intuitionALR" name="intuicao" class="input"></td>
                         </tr>
                     </table>
                     </div>
@@ -116,16 +119,16 @@
                             <th><input type="number" class="input" name="constituicao" id="inputConstituicao"></th>
                         </tr>
                         <tr>
-                            <td><button class="botao">Física</button></td>
-                            <td><input type="number" class="input" name="resFisica"></td>
+                            <td><button (click)="testeResFisica()" class="botao">Física</button></td>
+                            <td><input type="number" [(ngModel)]="resFisicaALR" class="input" name="resFisica"></td>
                         </tr>
                         <tr>
-                            <td><button class="botao">Mental</button></td>
-                            <td><input type="number" class="input" name="resMental"></td>
+                            <td><button (click)="testeSanidade()" class="botao">Mental</button></td>
+                            <td><input type="number" [(ngModel)]="resMentalALR" class="input" name="resMental"></td>
                         </tr>
                         <tr>
-                            <td><button class="botao">Espiritual</button></td>
-                            <td><input type="number" class="input" name="resEspitritual"></td>
+                            <td><button (click)="testeResEspiritual()" class="botao">Espiritual</button></td>
+                            <td><input type="number" [(ngModel)]="resEspiritualALR" class="input" name="resEspitritual"></td>
                         </tr>
                         </table>
                     </div>
@@ -142,16 +145,16 @@
                                 <th><input type="number" name="medicina" class="input" id="inputMedicina"></th>
                             </tr>
                             <tr>
-                                <td><button class="botao">Primeiros-Socorros</button></td>
-                                <td><input type="number" name="primeirosSocorros" class="input"></td>
+                                <td><button (click)="testefirstAid()" class="botao">Primeiros-Socorros</button></td>
+                                <td><input type="number" [(ngModel)]="firstAidALR" name="primeirosSocorros" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Medicina Forense</button></td>
-                                <td><input type="number" name="" class="input"></td>
+                                <td><button (click)="testeMedForense()" class="botao">Medicina Forense</button></td>
+                                <td><input type="number" [(ngModel)]="medForenseALR" name="" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Medicina</button></td>
-                                <td><input type="number" name="" class="input"></td>
+                                <td><button (click)="testeMedicina()" class="botao">Medicina</button></td>
+                                <td><input type="number" [(ngModel)]="medicinaALR" name="" class="input"></td>
                             </tr>
                         </table>
                     </div>
@@ -162,16 +165,16 @@
                                 <th><input type="number" class="input" name="inteligencia" id="inputInteligencia"></th>
                             </tr>
                             <tr>
-                                <td><button class="botao">Magia</button></td>
-                                <td><input type="number" name="" id="" class="input"></td>
+                                <td><button (click)="testeMagia()" class="botao">Magia</button></td>
+                                <td><input type="number" [(ngModel)]="magiaALR" name="" id="" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Intelecto</button></td>
-                                <td><input type="number" name="" id="" class="input"></td>
+                                <td><button (click)="testeIntelecto()" class="botao">Intelecto</button></td>
+                                <td><input type="number" [(ngModel)]="intelectoALR" name="" id="" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Conhecimento</button></td>
-                                <td><input type="number" name="" id="" class="input"></td>
+                                <td><button (click)="testeConhecimento()" class="botao">Conhecimento</button></td>
+                                <td><input type="number" [(ngModel)]="conhecimentoALR" name="" id="" class="input"></td>
                             </tr>                        
                         </table>
                     </div>
@@ -185,14 +188,14 @@
                             <th><input type="number" class="input" name="agilidade" id="inputAgilidade"></th>
                         </tr>
                         <tr>
-                            <td><button class="botao">Velocidade</button></td>
-                            <td><input type="number" name="" class="input"></td>
+                            <td><button (click)="testeVelocidade()" class="botao">Velocidade</button></td>
+                            <td><input type="number" [(ngModel)]="velocidadeALR" name="" class="input"></td>
                         <tr>
-                            <td><button class="botao">Escalada</button></td>
-                            <td><input type="number" name="" class="input"></td>
+                            <td><button (click)="testeEscalada()" class="botao">Escalada</button></td>
+                            <td><input type="number" [(ngModel)]="escaladaALR" name="" class="input"></td>
                         <tr>
-                            <td><button class="botao">Acrobacia</button></td>
-                            <td><input type="number" name="" class="input"></td>
+                            <td><button (click)="testeAcrobacia()" class="botao">Acrobacia</button></td>
+                            <td><input type="number" [(ngModel)]="acrobaciaALR" name="" class="input"></td>
                         </tr>
                     </table>
                 </div>
@@ -203,16 +206,16 @@
                             <th><input type="number" class="input" name="labia" id="inputLabia"></th>
                         </tr>
                             <tr>
-                                <td><button class="botao">Persuasão</button></td>
-                                <td><input type="number" class="input" name=""></td>
+                                <td><button (click)="testePersuasao()" class="botao">Persuasão</button></td>
+                                <td><input type="number" [(ngModel)]="persuasaoALR" class="input" name=""></td>
                             </tr>
                             <tr>
-                                <td><button class="botao">Diplomacia</button></td>
-                                <td><input type="number" class="input" name=""></td>
+                                <td><button (click)="testeDiplomacia()" class="botao">Diplomacia</button></td>
+                                <td><input type="number" [(ngModel)]="diplomaciaALR" class="input" name=""></td>
                             </tr>
-                            <tr>        
-                                <td><button class="botao">Intimidação</button></td>
-                                <td><input type="number" class="input" name=""></td>
+                            <tr>         
+                                <td><button (click)="testeIntimidacao()" class="botao">Intimidação</button></td>
+                                <td><input type="number" [(ngModel)]="intimidacaoALR" class="input" name=""></td>
                             </tr>
                     </table>
                 </div>

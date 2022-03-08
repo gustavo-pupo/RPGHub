@@ -105,8 +105,9 @@ div#vidaManaSan input{
 }
 div#vida, div#mana, div#sanidade{
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    flex-direction: row;
+    margin: 0 5%;
+    align-items: center;
 }
 div#nomeDiv{
     display: flex;
@@ -122,7 +123,7 @@ div#dado{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     align-items: center;
     margin: 0 0 0 15%;
 }
