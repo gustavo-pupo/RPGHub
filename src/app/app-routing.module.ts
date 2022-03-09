@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { USMComponent } from './usm/usm.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
+  {path: "/", component: HomeComponent},
   {path: "usm", component:USMComponent },
   {path: "alr", component:ALRComponent}
 ];
