@@ -78,7 +78,6 @@ div#infos{
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
-    margin: auto;
     align-items: center;
     font-size: 1.2rem;
 }
@@ -112,14 +111,14 @@ div#vidaManaSan input{
 div#vida, div#mana, div#sanidade{
     display: flex;
     flex-direction: row;
-    margin: 0 5%;
+    margin: 0 2%;
     align-items: center;
 }
 div#nomeDiv{
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 2%;
 }
 div#nomeDiv input{
     font-size: 1.5rem;
