@@ -68,8 +68,8 @@ export class ALRComponent implements OnInit {
     localStorage.setItem("escutarALR",this.escutarALR.toString());
     localStorage.setItem("intuitionALR",this.intuitionALR.toString());
     localStorage.setItem("resFisicaALR",this.resFisicaALR.toString());
-    localStorage.setItem("resMental",this.resMentalALR.toString());
-    localStorage.setItem("resEspititualALR",this.resEspiritualALR.toString());
+    localStorage.setItem("resMentalALR",this.resMentalALR.toString());
+    localStorage.setItem("resEspiritualALR",this.resEspiritualALR.toString());
     localStorage.setItem("firstAidALR",this.firstAidALR.toString());
     localStorage.setItem("medForense",this.medForenseALR.toString());
     localStorage.setItem("medicinaALR",this.medicinaALR.toString());
@@ -225,39 +225,6 @@ export class ALRComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(localStorage.getItem("resFisicaALR")==null||localStorage.getItem("resMentalALR")==null||localStorage.getItem("resEspiritual")==null){
-      this.nomeALR = "";
-      this.vidaALR = 0;
-      this.manaALR = 0;
-      this.sanidadeALR = 0;
-      this.lutarALR = 0;
-      this.armasPesadasALR = 0;
-      this.forBruALR = 0;
-      this.esquivaALR = 0;
-      this.bloqueioALR = 0;
-      this.counterALR = 0;
-      this.armasLevesALR = 0;
-      this.armasDeFogoALR = 0;
-      this.precisaoALR = 0;
-      this.findALR = 0;
-      this.escutarALR = 0;
-      this.intuitionALR = 0;
-      this.resFisicaALR = 0;
-      this.resMentalALR = 0;
-      this.resEspiritualALR = 0;
-      this.firstAidALR = 0;
-      this.medForenseALR = 0;
-      this.medicinaALR = 0;
-      this.velocidadeALR = 0;
-      this.escaladaALR = 0;
-      this.acrobaciaALR = 0;
-      this.magiaALR = 0;
-      this.intelectoALR = 0;
-      this.conhecimentoALR = 0;
-      this.persuasaoALR = 0;
-      this.diplomaciaALR = 0;
-      this.intimidacaoALR = 0;
-    }else{
       this.nomeALR = localStorage.getItem("nomeALR")
       this.vidaALR = parseInt(localStorage.getItem("vidaALR"));
       this.manaALR = parseInt(localStorage.getItem("manaALR"));
@@ -289,6 +256,5 @@ export class ALRComponent implements OnInit {
       this.persuasaoALR = parseInt(localStorage.getItem("persuasaoALR"));
       this.diplomaciaALR = parseInt(localStorage.getItem("diplomaciaALR"));
       this.intimidacaoALR = parseInt(localStorage.getItem("intimidacaoALR"));
-    }
   }
 }
