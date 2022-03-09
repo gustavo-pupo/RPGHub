@@ -22,11 +22,15 @@
                     <input type="number" [(ngModel)]="sanidadeALR" name="sanidade" id="inputSanidade">
                     <h2>/{{resMentalALR}}</h2>
                 </div>
-                <button (click)="salvar()" class="botao salvar">Salvar</button>
-            </div>
-        -</div>
+            </div>¨
+            <button (click)="salvar()" class="botao salvar">Salvar</button>
+        </div>
         <div id="atributos">
             <div id="esquerda">
+                <div id="dado">
+                    <h1>{{dado}}</h1>
+                    <h3>{{tierSucesso}}</h3>
+                </div>
                 <div id="FOR">
                     <table>
                         <tr>
@@ -45,26 +49,6 @@
                                 <td><button (click)="testeForBru()" class="botao">Força Bruta</button></td>
                                 <td><input type="number" [(ngModel)]="forBruALR" class="input" name="forcaBruta"></td>
                             </tr>
-                    </table>
-                </div>
-                <div id="DEF">
-                    <table>
-                        <tr>
-                            <th><h2>Defesa:</h2></th>
-                            <th><input class="input" type="number" name="defesa" id="inputDefesa"></th>
-                        </tr>
-                        <tr>
-                            <td><button (click)="testeEsquiva()" class="botao">Esquiva</button></td>
-                            <td><input type="number" [(ngModel)]="esquivaALR" class="input" name="esquiva"></td>
-                        </tr>
-                        <tr>
-                            <td><button (click)="testeBloqueio()" class="botao">Bloqueio</button></td>
-                            <td><input type="number" [(ngModel)]="bloqueioALR" class="input" name="bloqueio"></td>
-                        </tr>
-                        <tr>
-                            <td><button (click)="testeCounter()" class="botao">Contra-ataque</button></td>
-                            <td><input type="number" [(ngModel)]="counterALR" class="input" name="contraAtaque"></td>
-                        </tr>
                     </table>
                 </div>
             </div>
@@ -132,9 +116,29 @@
                         </tr>
                         </table>
                     </div>
-                    <div id="dado">
+                    <!-- <div id="dado">
                         <h1>{{dado}}</h1>
                         <h3>{{tierSucesso}}</h3>
+                    </div> -->
+                    <div id="LAB">
+                        <table class="tabelas">
+                            <tr>
+                                <th><h2>Lábia:</h2></th>
+                                <th><input type="number" class="input" name="labia" id="inputLabia"></th>
+                            </tr>
+                                <tr>
+                                    <td><button (click)="testePersuasao()" class="botao">Persuasão</button></td>
+                                    <td><input type="number" [(ngModel)]="persuasaoALR" class="input" name=""></td>
+                                </tr>
+                                <tr>
+                                    <td><button (click)="testeDiplomacia()" class="botao">Diplomacia</button></td>
+                                    <td><input type="number" [(ngModel)]="diplomaciaALR" class="input" name=""></td>
+                                </tr>
+                                <tr>         
+                                    <td><button (click)="testeIntimidacao()" class="botao">Intimidação</button></td>
+                                    <td><input type="number" [(ngModel)]="intimidacaoALR" class="input" name=""></td>
+                                </tr>
+                        </table>
                     </div>
                 </div>
                 <div id="right">
@@ -199,24 +203,24 @@
                         </tr>
                     </table>
                 </div>
-                <div id="LAB">
-                    <table class="tabelas">
+                <div id="DEF">
+                    <table>
                         <tr>
-                            <th><h2>Lábia:</h2></th>
-                            <th><input type="number" class="input" name="labia" id="inputLabia"></th>
+                            <th><h2>Defesa:</h2></th>
+                            <th><input class="input" type="number" name="defesa" id="inputDefesa"></th>
                         </tr>
-                            <tr>
-                                <td><button (click)="testePersuasao()" class="botao">Persuasão</button></td>
-                                <td><input type="number" [(ngModel)]="persuasaoALR" class="input" name=""></td>
-                            </tr>
-                            <tr>
-                                <td><button (click)="testeDiplomacia()" class="botao">Diplomacia</button></td>
-                                <td><input type="number" [(ngModel)]="diplomaciaALR" class="input" name=""></td>
-                            </tr>
-                            <tr>         
-                                <td><button (click)="testeIntimidacao()" class="botao">Intimidação</button></td>
-                                <td><input type="number" [(ngModel)]="intimidacaoALR" class="input" name=""></td>
-                            </tr>
+                        <tr>
+                            <td><button (click)="testeEsquiva()" class="botao">Esquiva</button></td>
+                            <td><input type="number" [(ngModel)]="esquivaALR" class="input" name="esquiva"></td>
+                        </tr>
+                        <tr>
+                            <td><button (click)="testeBloqueio()" class="botao">Bloqueio</button></td>
+                            <td><input type="number" [(ngModel)]="bloqueioALR" class="input" name="bloqueio"></td>
+                        </tr>
+                        <tr>
+                            <td><button (click)="testeCounter()" class="botao">Contra-ataque</button></td>
+                            <td><input type="number" [(ngModel)]="counterALR" class="input" name="contraAtaque"></td>
+                        </tr>
                     </table>
                 </div>
             </div>

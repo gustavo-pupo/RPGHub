@@ -175,7 +175,7 @@ testeTools(){
 
   ngOnInit():void {
 
-    if(localStorage.length == 0){
+    if(localStorage.getItem("intUSM") == null||localStorage.getItem("conUSM") == null){
       this.nomeUSM = "";
       this.intUSM = parseInt("0");
       this.qtdManaUSM = "0";

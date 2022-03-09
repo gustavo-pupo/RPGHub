@@ -62,6 +62,12 @@ input{
     margin: auto;
     height: 4rem;
 }
+.ladinho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 30%;
+}
 /* ids */
 div#status{
     /* border: 1px solid purple; */
@@ -126,4 +132,48 @@ div#dado{
     font-size: 3rem;
     align-items: center;
     margin: 0 0 0 15%;
+}
+@media (max-width: 600px){
+    div#infos{
+        flex-direction: column;
+        margin: 2% 0;
+    }
+    div#nomeDiv{
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+    div#nomeDiv input{
+        width: 97%;
+    }
+    div#vidaManaSan{
+        flex-direction: column;
+        width: 90%;
+    }
+    div#vidaManaSan input{
+        width: 100%;
+        text-align: center;
+    }
+    div#vida, div#mana, div#sanidade{
+        display: flex;
+        flex-direction: column;
+        margin: 1% 0;
+    }
+    div#atributos{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    div#meio{
+        display: flex;
+        flex-direction: column;
+    }
+    div#dado{
+        margin: 0 0 0 6%;
+    }
+    .salvar{
+        width: 100%;
+    }
+    
 }

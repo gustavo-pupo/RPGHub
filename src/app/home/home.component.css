@@ -70,3 +70,22 @@ div#botao{
     width: 100%;
     text-align: center;
 }
+@media(max-width: 600px){
+    header,footer{
+        width: 100%;
+    }
+    div#usm, div#did, div#hopeless,div#kynoka{
+    width: 50%;
+    height: 25vh;
+    margin: 2% 1%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0.5rem;
+    }
+    div#geral{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
