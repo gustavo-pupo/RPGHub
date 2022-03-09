@@ -9,18 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class USMComponent implements OnInit {
   
   nomeUSM = "";
-  intUSM:number = parseInt("0");
-  qtdManaUSM = "0";
-  forUSM:number = parseInt("0");
-  conUSM:number = parseInt("0");
-  qtdVidaUSM = "0";
-  dexUSM:number = parseInt("0");
-  tiroUSM:number = parseInt("0");
-  sentirUSM:number = parseInt("0");
-  curaUSM:number = parseInt("0");
-  tacarUSM:number = parseInt("0");
-  labiaUSM:number = parseInt("0");
-  toolsUSM:number = parseInt("0");
+  intUSM:number;
+  qtdManaUSM;
+  forUSM:number;
+  conUSM:number;
+  qtdVidaUSM;
+  dexUSM:number;
+  tiroUSM:number;
+  sentirUSM:number;
+  curaUSM:number;
+  tacarUSM:number;
+  labiaUSM:number;
+  toolsUSM:number;
 
   salvarInfos(){
     localStorage.setItem("nomeUSM", this.nomeUSM);

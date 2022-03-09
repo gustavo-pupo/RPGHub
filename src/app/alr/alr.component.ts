@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ALRComponent implements OnInit {
 
+  forALL:number;
+  dexALR:number;
+  perceptionALR:number;
+  conALR:number;
+  labiaALR:number;
+  medALR:number;
+  intALR:number;
+  agiALR:number;
+  def:number;
+
   nomeALR:string = "";
   vidaALR:number;
   manaALR:number;
@@ -71,7 +81,7 @@ export class ALRComponent implements OnInit {
     localStorage.setItem("resMentalALR",this.resMentalALR.toString());
     localStorage.setItem("resEspiritualALR",this.resEspiritualALR.toString());
     localStorage.setItem("firstAidALR",this.firstAidALR.toString());
-    localStorage.setItem("medForense",this.medForenseALR.toString());
+    localStorage.setItem("medForenseALR",this.medForenseALR.toString());
     localStorage.setItem("medicinaALR",this.medicinaALR.toString());
     localStorage.setItem("velocidadeALR",this.velocidadeALR.toString());
     localStorage.setItem("escaladaALR",this.escaladaALR.toString());
@@ -236,7 +246,7 @@ export class ALRComponent implements OnInit {
       this.bloqueioALR = parseInt(localStorage.getItem("bloqueioALR"));
       this.counterALR = parseInt(localStorage.getItem("counterALR"));
       this.armasLevesALR = parseInt(localStorage.getItem("armasLevesALR"));
-      this.armasDeFogoALR = parseInt(localStorage.getItem("armasDeFogo"));
+      this.armasDeFogoALR = parseInt(localStorage.getItem("armasDeFogoALR"));
       this.precisaoALR = parseInt(localStorage.getItem("precisaoALR"));
       this.findALR = parseInt(localStorage.getItem("findALR"));
       this.escutarALR = parseInt(localStorage.getItem("escutarALR"));
