@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ALRComponent implements OnInit {
 
-  forALL:number;
+  forALR:number;
   dexALR:number;
   perceptionALR:number;
   conALR:number;
@@ -15,7 +15,7 @@ export class ALRComponent implements OnInit {
   medALR:number;
   intALR:number;
   agiALR:number;
-  def:number;
+  defALR:number;
 
   nomeALR:string = "";
   vidaALR:number;
@@ -92,6 +92,15 @@ export class ALRComponent implements OnInit {
     localStorage.setItem("persuasaoALR",this.persuasaoALR.toString());
     localStorage.setItem("diplomaciaALR",this.diplomaciaALR.toString());
     localStorage.setItem("intimidacaoALR",this.intimidacaoALR.toString());
+    localStorage.setItem("forALR",this.forALR.toString());
+    localStorage.setItem("dexALR",this.dexALR.toString());
+    localStorage.setItem("perceptionALR",this.perceptionALR.toString());
+    localStorage.setItem("conALR", this.conALR.toString());
+    localStorage.setItem("labiaALR",this.labiaALR.toString());
+    localStorage.setItem("medALR",this.medALR.toString());
+    localStorage.setItem("intALR",this.intALR.toString());
+    localStorage.setItem("agiALR",this.agiALR.toString());
+    localStorage.setItem("defALR",this.defALR.toString());
   }
 
     contador:number = 1;
@@ -266,5 +275,14 @@ export class ALRComponent implements OnInit {
       this.persuasaoALR = parseInt(localStorage.getItem("persuasaoALR"));
       this.diplomaciaALR = parseInt(localStorage.getItem("diplomaciaALR"));
       this.intimidacaoALR = parseInt(localStorage.getItem("intimidacaoALR"));
+      this.forALR = parseInt(localStorage.getItem("forALR"));
+      this.dexALR = parseInt(localStorage.getItem("dexALR"));
+      this.perceptionALR = parseInt(localStorage.getItem("perceptionALR"));
+      this.conALR = parseInt(localStorage.getItem("conALR"));
+      this.labiaALR = parseInt(localStorage.getItem("labiaALR"));
+      this.medALR = parseInt(localStorage.getItem("medALR"));
+      this.intALR = parseInt(localStorage.getItem("intALR"));
+      this.agiALR = parseInt(localStorage.getItem("agiALR"));
+      this.defALR = parseInt(localStorage.getItem("defALR"));
   }
 }
