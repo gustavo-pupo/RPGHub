@@ -103,28 +103,8 @@ export class ALRComponent implements OnInit {
     localStorage.setItem("defALR",this.defALR.toString());
   }
 
-    contador:number = 1;
-    incomoda:string = 'incomodam ';
-
-    elefanteFdp(){
-        while(this.contador > 0){
-            if(this.contador == 1){
-                alert(`${this.contador} elefante incomoda muita gente.`);
-                this.contador++;
-            }else{
-            alert(this.contador + ' elefantes ' + this.incomoda.repeat(this.contador) +'muito mais.');
-            this.contador++;
-            alert(`${this.contador} elefantes incomodam muita gente.`);
-            this.contador++;
-            }
-        }
-    }
-
   calcularSucesso(pericia){
     var dado = this.d100();
-    if(pericia >= 81){
-      this.elefanteFdp();
-    }
     if(dado <= pericia){
       this.sucesso = true;
     }else{
@@ -157,88 +137,6 @@ export class ALRComponent implements OnInit {
     }
     console.log(dado);
     this.dado = dado;
-  }
-
-  testeResFisica(){
-    this.calcularSucesso(this.resFisicaALR);
-  }
-  testeResEspiritual(){
-    this.calcularSucesso(this.resEspiritualALR);
-  }
-  testeSanidade(){
-    this.calcularSucesso(this.sanidadeALR);
-  }
-  testeLutar(){
-    this.calcularSucesso(this.lutarALR);
-  }
-  testeArmasPesadas(){
-    this.calcularSucesso(this.armasPesadasALR);
-  }
-  testeForBru(){
-    this.calcularSucesso(this.forBruALR);
-  }
-  testeEsquiva(){
-    this.calcularSucesso(this.esquivaALR);
-  }
-  testeBloqueio(){
-    this.calcularSucesso(this.bloqueioALR);
-  }
-  testeCounter(){
-    this.calcularSucesso(this.counterALR);
-  }
-  testeArmasLeves(){
-    this.calcularSucesso(this.armasLevesALR);
-  }
-  testeArmasDeFogo(){
-    this.calcularSucesso(this.armasDeFogoALR);
-  }
-  testePrecisao(){
-    this.calcularSucesso(this.precisaoALR);
-  }
-  testeFind(){
-    this.calcularSucesso(this.findALR);
-  }
-  testeEscutar(){
-    this.calcularSucesso(this.intuitionALR);
-  }
-  testeIntuition(){
-    this.calcularSucesso(this.intuitionALR);
-  }
-  testefirstAid(){
-    this.calcularSucesso(this.firstAidALR);
-  }
-  testeMedForense(){
-    this.calcularSucesso(this.medForenseALR);
-  }
-  testeMedicina(){
-    this.calcularSucesso(this.medicinaALR);
-  }
-  testeVelocidade(){
-    this.calcularSucesso(this.velocidadeALR);
-  }
-  testeEscalada(){
-    this.calcularSucesso(this.escaladaALR);
-  }
-  testeAcrobacia(){
-    this.calcularSucesso(this.acrobaciaALR);
-  }
-  testeMagia(){
-    this.calcularSucesso(this.magiaALR);
-  }
-  testeIntelecto(){
-    this.calcularSucesso(this.intelectoALR);
-  }
-  testeConhecimento(){
-    this.calcularSucesso(this.conhecimentoALR);
-  }
-  testePersuasao(){
-    this.calcularSucesso(this.persuasaoALR);
-  }
-  testeDiplomacia(){
-    this.calcularSucesso(this.diplomaciaALR);
-  }
-  testeIntimidacao(){
-    this.calcularSucesso(this.intimidacaoALR);
   }
 
   constructor() { }

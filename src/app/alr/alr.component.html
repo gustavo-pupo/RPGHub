@@ -38,15 +38,15 @@
                             <th><input type="number" [(ngModel)]="forALR" class="input" name="força" id="inputFor"></th>
                         </tr>
                             <tr>
-                                <td><button (click)="testeLutar()" class="botao">Lutar</button></td>
+                                <td><button (click)="calcularSucesso(lutarALR)" class="botao">Lutar</button></td>
                                 <td><input type="number" [(ngModel)]="lutarALR" class="input" name="lutar"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeArmasPesadas()" class="botao">Armas Pesadas</button></td>
+                                <td><button (click)="calcularSucesso(armasPesadasALR)" class="botao">Armas Pesadas</button></td>
                                 <td><input type="number" [(ngModel)]="armasPesadasALR" class="input" name="armasPesadas"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeForBru()" class="botao">Força Bruta</button></td>
+                                <td><button (click)="calcularSucesso(forBruALR)" class="botao">Força Bruta</button></td>
                                 <td><input type="number" [(ngModel)]="forBruALR" class="input" name="forcaBruta"></td>
                             </tr>
                     </table>
@@ -61,15 +61,15 @@
                                 <th><input class="input" [(ngModel)]="dexALR" type="number" name="destreza" id="inputDestreza"></th>
                             </tr>
                             <tr>
-                                <td><button (click)="testeArmasLeves()" class="botao">Armas leves</button></td>
+                                <td><button (click)="calcularSucesso(armasLevesALR)" class="botao">Armas leves</button></td>
                                 <td><input type="number" [(ngModel)]="armasLevesALR" class="input" name="armasLeves"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeArmasDeFogo()" class="botao">Armas de fogo</button></td>
+                                <td><button (click)="calcularSucesso(armasDeFogoALR)" class="botao">Armas de fogo</button></td>
                                 <td><input type="number" [(ngModel)]="armasDeFogoALR" class="input" name="armasDeFogo"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testePrecisao()" class="botao">Precisão</button></td>
+                                <td><button (click)="calcularSucesso(precisaoALR)" class="botao">Precisão</button></td>
                                 <td><input type="number" [(ngModel)]="precisaoALR" class="input" name="precisao"></td>
                             </tr>
                         </table>
@@ -81,15 +81,15 @@
                             <th><input  type="number" [(ngModel)]="perceptionALR" class="input" name="perception" id="inputPerception"></th>
                         </tr>
                         <tr>
-                            <td><button (click)="testeFind()" class="botao">Encontrar</button></td>
+                            <td><button (click)="calcularSucesso(findALR)" class="botao">Encontrar</button></td>
                             <td><input type="number" [(ngModel)]="findALR" name="encontrar" class="input"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="testeEscutar()" class="botao">Escutar</button></td>
+                            <td><button (click)="calcularSucesso(escutarALR)" class="botao">Escutar</button></td>
                             <td><input type="number" [(ngModel)]="escutarALR" name="escutar" class="input"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="testeIntuition()" class="botao">Intuição</button></td>
+                            <td><button (click)="calcularSucesso(intuitionALR)" class="botao">Intuição</button></td>
                             <td><input type="number" [(ngModel)]="intuitionALR" name="intuicao" class="input"></td>
                         </tr>
                     </table>
@@ -103,15 +103,15 @@
                             <th><input type="number" [(ngModel)]="conALR" class="input" name="constituicao" id="inputConstituicao"></th>
                         </tr>
                         <tr>
-                            <td><button (click)="testeResFisica()" class="botao">Física</button></td>
+                            <td><button (click)="calcularSucesso(resFisicaALR)" class="botao">Física</button></td>
                             <td><input type="number" [(ngModel)]="resFisicaALR" class="input" name="resFisica"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="testeSanidade()" class="botao">Mental</button></td>
+                            <td><button (click)="calcularSucesso(resMentalALR)" class="botao">Mental</button></td>
                             <td><input type="number" [(ngModel)]="resMentalALR" class="input" name="resMental"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="testeResEspiritual()" class="botao">Espiritual</button></td>
+                            <td><button (click)="calcularSucesso(resEspiritualALR)" class="botao">Espiritual</button></td>
                             <td><input type="number" [(ngModel)]="resEspiritualALR" class="input" name="resEspitritual"></td>
                         </tr>
                         </table>
@@ -127,15 +127,15 @@
                                 <th><input type="number" [(ngModel)]="labiaALR" class="input" name="labia" id="inputLabia"></th>
                             </tr>
                                 <tr>
-                                    <td><button (click)="testePersuasao()" class="botao">Persuasão</button></td>
+                                    <td><button (click)="calcularSucesso(persuasaoALR)" class="botao">Persuasão</button></td>
                                     <td><input type="number" [(ngModel)]="persuasaoALR" class="input" name=""></td>
                                 </tr>
                                 <tr>
-                                    <td><button (click)="testeDiplomacia()" class="botao">Diplomacia</button></td>
+                                    <td><button (click)="calcularSucesso(diplomaciaALR)" class="botao">Diplomacia</button></td>
                                     <td><input type="number" [(ngModel)]="diplomaciaALR" class="input" name=""></td>
                                 </tr>
                                 <tr>         
-                                    <td><button (click)="testeIntimidacao()" class="botao">Intimidação</button></td>
+                                    <td><button (click)="calcularSucesso(intimidacaoALR)" class="botao">Intimidação</button></td>
                                     <td><input type="number" [(ngModel)]="intimidacaoALR" class="input" name=""></td>
                                 </tr>
                         </table>
@@ -149,15 +149,15 @@
                                 <th><input type="number" [(ngModel)]="medALR" name="medicina" class="input" id="inputMedicina"></th>
                             </tr>
                             <tr>
-                                <td><button (click)="testefirstAid()" class="botao">Primeiros-Socorros</button></td>
+                                <td><button (click)="calcularSucesso(firstAidALR)" class="botao">Primeiros-Socorros</button></td>
                                 <td><input type="number" [(ngModel)]="firstAidALR" name="primeirosSocorros" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeMedForense()" class="botao">Medicina Forense</button></td>
+                                <td><button (click)="calcularSucesso(medForenseALR)" class="botao">Medicina Forense</button></td>
                                 <td><input type="number" [(ngModel)]="medForenseALR" name="" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeMedicina()" class="botao">Medicina</button></td>
+                                <td><button (click)="calcularSucesso(medicinaALR)" class="botao">Medicina</button></td>
                                 <td><input type="number" [(ngModel)]="medicinaALR" name="" class="input"></td>
                             </tr>
                         </table>
@@ -169,15 +169,15 @@
                                 <th><input type="number" [(ngModel)]="intALR" class="input" name="inteligencia" id="inputInteligencia"></th>
                             </tr>
                             <tr>
-                                <td><button (click)="testeMagia()" class="botao">Magia</button></td>
+                                <td><button (click)="calcularSucesso(magiaALR)" class="botao">Magia</button></td>
                                 <td><input type="number" [(ngModel)]="magiaALR" name="" id="" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeIntelecto()" class="botao">Intelecto</button></td>
+                                <td><button (click)="calcularSucesso(intelectoALR)" class="botao">Intelecto</button></td>
                                 <td><input type="number" [(ngModel)]="intelectoALR" name="" id="" class="input"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="testeConhecimento()" class="botao">Conhecimento</button></td>
+                                <td><button (click)="calcularSucesso(conhecimentoALR)" class="botao">Conhecimento</button></td>
                                 <td><input type="number" [(ngModel)]="conhecimentoALR" name="" id="" class="input"></td>
                             </tr>                        
                         </table>
@@ -192,13 +192,13 @@
                             <th><input type="number" [(ngModel)]="agiALR" class="input" name="agilidade" id="inputAgilidade"></th>
                         </tr>
                         <tr>
-                            <td><button (click)="testeVelocidade()" class="botao">Velocidade</button></td>
+                            <td><button (click)="calcularSucesso(velocidadeALR)" class="botao">Velocidade</button></td>
                             <td><input type="number" [(ngModel)]="velocidadeALR" name="" class="input"></td>
                         <tr>
-                            <td><button (click)="testeEscalada()" class="botao">Escalada</button></td>
+                            <td><button (click)="calcularSucesso(escaladaALR)" class="botao">Escalada</button></td>
                             <td><input type="number" [(ngModel)]="escaladaALR" name="" class="input"></td>
                         <tr>
-                            <td><button (click)="testeAcrobacia()" class="botao">Acrobacia</button></td>
+                            <td><button (click)="calcularSucesso(acrobaciaALR)" class="botao">Acrobacia</button></td>
                             <td><input type="number" [(ngModel)]="acrobaciaALR" name="" class="input"></td>
                         </tr>
                     </table>
@@ -210,15 +210,15 @@
                             <th><input class="input" [(ngModel)]="defALR" type="number" name="defesa" id="inputDefesa"></th>
                         </tr>
                         <tr>
-                            <td><button (click)="testeEsquiva()" class="botao">Esquiva</button></td>
+                            <td><button (click)="calcularSucesso(esquivaALR)" class="botao">Esquiva</button></td>
                             <td><input type="number" [(ngModel)]="esquivaALR" class="input" name="esquiva"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="testeBloqueio()" class="botao">Bloqueio</button></td>
+                            <td><button (click)="calcularSucesso(bloqueioALR)" class="botao">Bloqueio</button></td>
                             <td><input type="number" [(ngModel)]="bloqueioALR" class="input" name="bloqueio"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="testeCounter()" class="botao">Contra-ataque</button></td>
+                            <td><button (click)="calcularSucesso(counterALR)" class="botao">Contra-ataque</button></td>
                             <td><input type="number" [(ngModel)]="counterALR" class="input" name="contraAtaque"></td>
                         </tr>
                     </table>
