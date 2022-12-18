@@ -32,10 +32,15 @@ label, p{
     width: 50%;
     height: 4rem;
     margin: 1%;
+    transition: 0.5s;
     background-color: #80bcfc;
     color: #161444;
-    font-size: 1rem
+    font-size: 1rem;
+}
 
+.botao:hover{
+    background-color: #88BFBF;
+    box-shadow: 0 0 1rem #D2F8E7;
 }
 
 div.ladinho{
@@ -68,8 +73,10 @@ div#infos button{
     height: 60px;
     margin: 2% 0 2% 10%;
     font-size: 1.5rem;
-    background-color: #80bcfc;
-    color: #161444;
+}
+
+div#infos input{
+    font-size: 1.7rem;
 }
 
 div#status{
@@ -87,6 +94,7 @@ div#atributos{
 div#atributos input{
     width: 80%;
     margin: 0 0 4% 0;
+    font-size: 1.5rem;
 }
 
 div#left{
@@ -159,8 +167,8 @@ div#resultado p{
 }
 span#teste{
     font-size: 4rem;
-    color: white;
-    text-shadow: black 0 0 0.5rem;
+    color: #D2F8E7;
+    text-shadow: #88bfbf 0 0 1rem, #88bfbf 0 0 1rem;
 }
 
 #copy{

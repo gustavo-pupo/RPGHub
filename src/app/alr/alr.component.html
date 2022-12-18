@@ -22,7 +22,7 @@
                     <input type="number" [(ngModel)]="sanidadeALR" name="sanidade" id="inputSanidade">
                     <h2>/{{resMentalALR}}</h2>
                 </div>
-            </div>¨
+            </div>
             <button (click)="salvar()" class="botao salvar">Salvar</button>
         </div>
         <div id="atributos">
@@ -69,8 +69,8 @@
                                 <td><input type="number" [(ngModel)]="armasDeFogoALR" class="input" name="armasDeFogo"></td>
                             </tr>
                             <tr>
-                                <td><button (click)="calcularSucesso(precisaoALR)" class="botao">Precisão</button></td>
-                                <td><input type="number" [(ngModel)]="precisaoALR" class="input" name="precisao"></td>
+                                <td><button (click)="calcularSucesso(prestidigitacaoALR)" class="botao">Prestidigitação</button></td>
+                                <td><input type="number" [(ngModel)]="prestidigitacaoALR" class="input" name="precisao"></td>
                             </tr>
                         </table>
                     </div>
@@ -89,8 +89,8 @@
                             <td><input type="number" [(ngModel)]="escutarALR" name="escutar" class="input"></td>
                         </tr>
                         <tr>
-                            <td><button (click)="calcularSucesso(intuitionALR)" class="botao">Intuição</button></td>
-                            <td><input type="number" [(ngModel)]="intuitionALR" name="intuicao" class="input"></td>
+                            <td><button (click)="calcularSucesso(investigarALR)" class="botao">Investigação</button></td>
+                            <td><input type="number" [(ngModel)]="investigarALR" name="intuicao" class="input"></td>
                         </tr>
                     </table>
                     </div>
@@ -131,8 +131,8 @@
                                     <td><input type="number" [(ngModel)]="persuasaoALR" class="input" name=""></td>
                                 </tr>
                                 <tr>
-                                    <td><button (click)="calcularSucesso(diplomaciaALR)" class="botao">Diplomacia</button></td>
-                                    <td><input type="number" [(ngModel)]="diplomaciaALR" class="input" name=""></td>
+                                    <td><button (click)="calcularSucesso(psicoALR)" class="botao">Psicologia</button></td>
+                                    <td><input type="number" [(ngModel)]="psicoALR" class="input" name=""></td>
                                 </tr>
                                 <tr>         
                                     <td><button (click)="calcularSucesso(intimidacaoALR)" class="botao">Intimidação</button></td>
@@ -192,14 +192,14 @@
                             <th><input type="number" [(ngModel)]="agiALR" class="input" name="agilidade" id="inputAgilidade"></th>
                         </tr>
                         <tr>
+                            <td><button (click)="calcularSucesso(atletismoALR)" class="botao">Atletismo</button></td>
+                            <td><input type="number" [(ngModel)]="atletismoALR" name="" class="input"></td>
+                        <tr>
+                            <td><button (click)="calcularSucesso(furtividadeALR)" class="botao">Furtividade</button></td>
+                            <td><input type="number" [(ngModel)]="furtividadeALR" name="" class="input"></td>
+                        <tr>
                             <td><button (click)="calcularSucesso(velocidadeALR)" class="botao">Velocidade</button></td>
                             <td><input type="number" [(ngModel)]="velocidadeALR" name="" class="input"></td>
-                        <tr>
-                            <td><button (click)="calcularSucesso(escaladaALR)" class="botao">Escalada</button></td>
-                            <td><input type="number" [(ngModel)]="escaladaALR" name="" class="input"></td>
-                        <tr>
-                            <td><button (click)="calcularSucesso(acrobaciaALR)" class="botao">Acrobacia</button></td>
-                            <td><input type="number" [(ngModel)]="acrobaciaALR" name="" class="input"></td>
                         </tr>
                     </table>
                 </div>

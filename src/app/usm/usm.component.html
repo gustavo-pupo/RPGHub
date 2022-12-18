@@ -3,7 +3,7 @@
         <div id="status">
             <div id="nomeDiv">
             <label for="nome">Nome:</label>
-                <input type="text" placeholder="Ex: Joãozinho#069420" name="nome" id="nome" [(ngModel)]="nomeUSM">
+                <input type="text" name="nome" id="nome" [(ngModel)]="nomeUSM">
             </div>
                 <div id="vida">
                     <label for="vida">Vida:</label>
@@ -54,7 +54,7 @@
                 <input name="Ferramentas" type="number" id="tools" [(ngModel)]="toolsUSM">
             </div>
         </div>
-        <button (click)="salvarInfos()"  id="salvaAtributos">Salvar</button>
+        <button (click)="salvarInfos()" class="botao">Salvar</button>
     </div>
 
     <div id="roladas">
