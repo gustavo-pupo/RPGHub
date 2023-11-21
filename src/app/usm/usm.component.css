@@ -171,6 +171,19 @@ span#teste{
     text-shadow: #88bfbf 0 0 1rem, #88bfbf 0 0 1rem;
 }
 
+div#save{
+    display: flex;
+    margin: 7% 0 0 1%;
+    flex-direction: row;
+    padding: 0;
+    width: 80%;
+    /* border: 1px solid white; */
+    align-items: center;
+}
+div#save button{
+    width: 100%;
+    margin: 0;
+}
 #copy{
     text-align: center;
 }

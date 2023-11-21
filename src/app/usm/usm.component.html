@@ -22,39 +22,43 @@
         </div>
         <div id="atributos">
             <div id="left">
-            <label for="Força">Força:</label>
-                <input name="Força" value="0" type="number" id="for" [(ngModel)]="forUSM">
+                <label for="Força">Força:</label>
+                    <input name="Força" value="0" type="number" id="for" [(ngModel)]="forUSM">
 
-            <label for="Constituição">Constituição:</label>
-                <input name="Constituição" type="number" id="con" [(ngModel)]="conUSM">
+                <label for="Constituição">Constituição:</label>
+                    <input name="Constituição" type="number" id="con" [(ngModel)]="conUSM">
 
-            <label for="Destreza">Destreza:</label>
-                <input name="Destreza" type="number" id="dex" [(ngModel)]="dexUSM">
+                <label for="Destreza">Destreza:</label>
+                    <input name="Destreza" type="number" id="dex" [(ngModel)]="dexUSM">
 
-            <label for="Atirar">Atirar:</label>
-                <input name="Atirar" type="number" id="atirar" [(ngModel)]="tiroUSM">
-                
-            <label for="Percepção">Percepção:</label>
-                <input name="Percepção" type="number" id="sentir" [(ngModel)]="sentirUSM">
+                <label for="Atirar">Atirar:</label>
+                    <input name="Atirar" type="number" id="atirar" [(ngModel)]="tiroUSM">
+                    
+                <label for="Percepção">Percepção:</label>
+                    <input name="Percepção" type="number" id="sentir" [(ngModel)]="sentirUSM">
+                    <div id="save">    
+                        <button (click)="salvarInfos()" id="save" class="botao">Salvar</button>        
+                    </div>   
             </div>
             <div id="right">
-            <label for="Primeiros-Socorros">Primeiros-Socorros:</label>
-                <input name="Primeiros-Socorros" type="number" id="cura" [(ngModel)]="curaUSM">
+                <label for="Primeiros-Socorros">Primeiros-Socorros:</label>
+                    <input name="Primeiros-Socorros" type="number" id="cura" [(ngModel)]="curaUSM">
 
-            <label for="Arremessar">Arremessar:</label>
-                <input name="Arremessar" type="number" id="tacar" [(ngModel)]="tacarUSM">
+                <label for="Arremessar">Arremessar:</label>
+                    <input name="Arremessar" type="number" id="tacar" [(ngModel)]="tacarUSM">
 
-            <label for="Inteligência">Inteligência:</label>
-                <input name="Inteligência" type="number" id="int" [(ngModel)]="intUSM">
+                <label for="Inteligência">Inteligência:</label>
+                    <input name="Inteligência" type="number" id="int" [(ngModel)]="intUSM">
 
-            <label for="Lábia">Lábia:</label>
-                <input name="Lábia" type="number" id="labia" [(ngModel)]="labiaUSM">
+                <label for="Lábia">Lábia:</label>
+                    <input name="Lábia" type="number" id="labia" [(ngModel)]="labiaUSM">
 
-            <label for="Ferramentas">Ferramentas:</label>
-                <input name="Ferramentas" type="number" id="tools" [(ngModel)]="toolsUSM">
+                <label for="Ferramentas">Ferramentas:</label>
+                    <input name="Ferramentas" type="number" id="tools" [(ngModel)]="toolsUSM">
+                <label>Total:</label>
+                <input type="text" disabled value="{{intUSM + forUSM + conUSM + dexUSM + tiroUSM + sentirUSM + curaUSM + tacarUSM + labiaUSM + toolsUSM}}">
             </div>
         </div>
-        <button (click)="salvarInfos()" class="botao">Salvar</button>
     </div>
 
     <div id="roladas">
